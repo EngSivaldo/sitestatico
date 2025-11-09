@@ -7,6 +7,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ 
+
+  <!-- Botões flutuantes -->
+  <button id="scroll-up" class="scroll-btn">▲</button>
+  <button id="scroll-down" class="scroll-btn">▼</button>
+
   <header>
     <a href="#"><img src="images/logo.jpg" alt="Logo da pagina"></a>
     
@@ -24,18 +30,18 @@
       <div><ion-icon name="search"></ion-icon></div>
     </div>
   </header>
-
+  
   <section id="home">
     <div>
       <h3>Bem vindo a Hash-Pizza</h3>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, consequuntur? Ipsa explicabo impedit dolore assumenda aliquam excepturi sapiente iste saepe quisquam deserunt, numquam vitae, unde maxime. Quaerat animi pariatur nesciunt.</p>
       <a href="#">Faça seu pedido!</a>
     </div>
-
+    
   </section>
 
   <section id="about">
-    <h1><span>Sobre</span> Nós</h1>
+    <h1 class="heading"><span>Sobre</span> Nós</h1>
     <div>
       <img src="images/sobre.jpg" alt="imagem de uma pizzaria">
     </div>
@@ -46,9 +52,9 @@
       <a href="#">Saiba mais....</a>
     </div>
   </section>
- <!--secao de pizzas-->
+  <!--secao de pizzas-->
   <section id="menu">
-    <h1><span>Nosso</span> Menu</h1>
+    <h1 class="heading"><span>Nosso</span> Menu</h1>
     <div class="box-container">
 
       <div class="box">
@@ -57,21 +63,21 @@
         <div>R$55.99 <span> 60.99</span></div>
         <a href="#">Adicionar ao carrinho</a>
       </div>
-
+      
       <div class="box">
         <img src="images/pizza_item_2.jpg" alt="">
         <h3>Aventuras Vegetais</h3>
         <div>R$45.99 <span> 60.99</span></div>
         <a href="#">Adicionar ao carrinho</a>
       </div>
-
+      
       <div class="box">
         <img src="images/pizza_item_3.jpg" alt="">
         <h3>Mediterrania</h3>
         <div>R$75.99 <span> 80.50</span></div>
         <a href="#">Adicionar ao carrinho</a>
       </div>
-
+      
       <div class="box">
         <img src="images/pizza_item_4.jpg" alt="">
         <h3>Pomodoro do Campo</h3>
@@ -85,21 +91,21 @@
         <div>R$55.99 <span> 60.99</span></div>
         <a href="#">Adicionar ao carrinho</a>
       </div>
-
+      
       <div class="box">
         <img src="images/pizza_item_6.jpg" alt="">
         <h3>Saborosa lava</h3>
         <div>R$85.99 <span> 100.00</span></div>
         <a href="#">Adicionar ao carrinho</a>
       </div>
-
-
+      
+      
     </div>
-
+    
   </section>
-
+  
   <section id="products">
-    <h1><span>Combos e</span> Promoções</h1>
+    <h1 class="heading"><span>Combos e</span> Promoções</h1>
     <div class="box-container">
       <div class="box">
         <div>
@@ -117,7 +123,7 @@
             <i> <ion-icon name="star"></ion-icon></i>
             <i> <ion-icon name="star"></ion-icon></i>
             <i> <ion-icon name="star"></ion-icon></i>
-
+            
           </div>
         </div>
         <div> R$65.00 <span> a partir</span></div>
@@ -140,7 +146,7 @@
             <i> <ion-icon name="star"></ion-icon></i>
             <i> <ion-icon name="star"></ion-icon></i>
             <i> <ion-icon name="star"></ion-icon></i>
-
+            
           </div>
         </div>
         <div> R$55.00 <span> a partir</span></div>
@@ -163,7 +169,7 @@
             <i> <ion-icon name="star"></ion-icon></i>
             <i> <ion-icon name="star"></ion-icon></i>
             <i><ion-icon name="star-half"></ion-icon></i>
-
+            
           </div>
         </div>
         <div> R$55.00 <span> a partir</span></div>
@@ -171,10 +177,10 @@
     </div>
 
   </section>
-
-
+  
+  
   <section id="review">
-    <h1><span>O que Nossos</span> clientes dizem!</h1>
+    <h1 class="heading"><span>O que Nossos</span> clientes dizem!</h1>
     <div class="box-container">
       <div class="box">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore praesentium nulla perspiciatis numquam recusandae molestiae, incidunt distinctio, error amet quas repellendus expedita quaerat sed enim, tenetur at. Accusamus, quasi harum.</p>
@@ -186,9 +192,9 @@
           <i> <ion-icon name="star"></ion-icon></i>
           <i> <ion-icon name="star"></ion-icon></i>
           <ion-icon name="star-half"></ion-icon></i>    
-         </div>
+        </div>
       </div>
-
+      
       <div class="box">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore praesentium nulla perspiciatis numquam recusandae molestiae, incidunt distinctio, error amet quas repellendus expedita quaerat sed enim, tenetur at. Accusamus, quasi harum.</p>
         <img src="images/cliente_2.jpg" alt="">
@@ -201,80 +207,81 @@
           <i> <ion-icon name="star"></ion-icon></i>
         </div>
       </div>
-
+      
       <div class="box">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore praesentium nulla perspiciatis numquam recusandae molestiae, incidunt distinctio, error amet quas repellendus expedita quaerat sed enim, tenetur at. Accusamus, quasi harum.</p>
         <img src="images/lice.png" alt="" style="width: 300px;">
         <h3>Lice Almeida</h3>
         <div>
-        <i> <ion-icon name="star"></ion-icon></i>
-        <i> <ion-icon name="star"></ion-icon></i>
-        <i> <ion-icon name="star"></ion-icon></i>
+          <i> <ion-icon name="star"></ion-icon></i>
+          <i> <ion-icon name="star"></ion-icon></i>
+          <i> <ion-icon name="star"></ion-icon></i>
         </i>          
-        </div>
       </div>
     </div>
+  </div>
+  
+</section>
 
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-col">
-        <h4 class="heading-footer">Pizza <span>Hash</span></h4>
-        <ul>
-          <li>
-            <a href="#about">Sobre Nós</a>
-          </li>
-          <li>
-            <a href="#menu">Menu</a>
-          </li>
-          <li>
-            <a href="#">Politica de privacidade</a>
-          </li>
-          <li>
-            <a href="#">Termos de serviços</a>
-          </li>
-        </ul> 
-      </div>
-
-      <div class="footer-col">
-        <h4 class="heading-footer">Obtenha <span> ajuda</span></h4>
-        <ul>
-          <li>
-            <a href="#">FAQ</a>
-          </li>
-          <li>
-            <a href="#menu">Devoluções</a>
-          </li>
-          <li>
-            <a href="#">Opções de pagamentos</a>
-          </li>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-col">
+      <h4 class="heading-footer">Pizza <span>Hash</span></h4>
+      <ul>
+        <li>
+          <a href="#about">Sobre Nós</a>
+        </li>
+        <li>
+          <a href="#menu">Menu</a>
+        </li>
+        <li>
+          <a href="#">Politica de privacidade</a>
+        </li>
+        <li>
+          <a href="#">Termos de serviços</a>
+        </li>
+      </ul> 
+    </div>
+    
+    <div class="footer-col">
+      <h4 class="heading-footer">Obtenha <span> ajuda</span></h4>
+      <ul>
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#menu">Devoluções</a>
+        </li>
+        <li>
+          <a href="#">Opções de pagamentos</a>
+        </li>
         
-        </ul> 
-      </div>
-
-
-      <div class="footer-col">
-        <h4 class="heading-footer">Siga<span>-nos</span></h4>
-        <div class="social-links">
-          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-          <a href="#">  <ion-icon name="logo-linkedin"></ion-icon></a>
-          <a href="#">  <ion-icon name="logo-twitter"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+      </ul> 
+    </div>
+    
+    
+    <div class="footer-col">
+      <h4 class="heading-footer">Siga<span>-nos</span></h4>
+      <div class="social-links">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#">  <ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="#">  <ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
         </div>   
       </div>
     </div>
     <div class="footer-botton">
       <p>&copy;2025 Hash-Pizza todos os direito reservados</p>
     </div>
-
+    
   </footer>
-
-
+  
+  
   <!--importar os icones do site-->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
- 
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+  <script src="script.js"></script>
+  
 </body>
 </html>

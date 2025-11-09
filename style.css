@@ -1,1 +1,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --main-color: #da190f;
+  --bg: #13131a;
+  --bg-card: #0c0c14;
+  --border: 0.1rem solid rgba(255, 255, 255, 3, 3);
+}
+
+/* Seleciona todos os elementos da página */
+* {
+  font-family: "roboto", sans-serif; /* Define a fonte padrão para Roboto, com fallback para qualquer fonte sem serifa */
+  margin: 0; /* Remove todas as margens padrão dos elementos */
+  padding: 0; /* Remove todos os preenchimentos internos padrão dos elementos */
+  box-sizing: border-box; /* Inclui bordas e padding dentro da largura e altura total do elemento */
+  outline: none; /* Remove o contorno (geralmente mostrado ao focar em inputs, links, etc.) */
+  border: none; /* Remove bordas padrão */
+  text-decoration: none; /* Remove sublinhados e outras decorações de texto (ex: links sublinhados) */
+  text-transform: capitalize; /* Faz com que a primeira letra de cada palavra fique em maiúscula */
+  transition: 0.2s linear; /* Aplica uma transição suave de 0.2 segundos a propriedades que mudarem (ex: hover) */
+}
+
+/* Estiliza o elemento raiz (html) */
+html {
+  font-size: 72.5%; /* Define a base da fonte como 72.5% do padrão do navegador (normalmente 10px se o padrão for 16px) */
+  overflow-x: hidden; /* Impede a rolagem horizontal na página */
+  scroll-padding-top: 9rem; /* Cria um espaçamento de 9rem no topo ao usar âncoras (scroll suave até uma seção) */
+  scroll-behavior: smooth; /* Faz o comportamento de rolagem ser suave ao navegar por âncoras */
+}
+
+/* Personaliza a barra de rolagem para navegadores baseados em WebKit (Chrome, Edge, Safari) */
+html::-webkit-scrollbar {
+  width: 0.8rem; /* Define a largura da barra de rolagem */
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent; /* Deixa o fundo da trilha da barra de rolagem transparente */
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #ffffff; /* Define a cor da parte "arrastável" da barra de rolagem como branca */
+  border-radius: 5rem; /* Deixa a barra de rolagem com cantos bem arredondados */
+}
+
+body {
+  background-color: var(--bg);
+}
+
+section {
+  padding: 2rem 7%;
+}
+
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+  color: white;
+}
+
+.heading span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+/* === Botões flutuantes de rolagem === */
+.scroll-btn {
+  position: fixed; /* Fica sempre visível na tela */
+  right: 2rem; /* Distância da borda direita */
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%; /* Formato circular */
+  background: #fff; /* Fundo branco */
+  color: #111; /* Texto escuro */
+  font-size: 2rem; /* Tamanho da seta */
+  cursor: pointer; /* Mostra que é clicável */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Sombra leve */
+  transition: all 0.3s ease; /* Transição suave */
+  z-index: 1000; /* Fica acima de outros elementos */
+}
+
+/* Posições individuais */
+#scroll-up {
+  bottom: 8rem;
+  display: none; /* Inicialmente escondido até rolar a página */
+}
+
+#scroll-down {
+  bottom: 2rem;
+}
+
+/* Efeito ao passar o mouse */
+.scroll-btn:hover {
+  background: #f39c12;
+  color: #fff;
+  transform: scale(1.1);
+}
