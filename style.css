@@ -4,7 +4,7 @@
   --main-color: #da190f;
   --bg: #13131a;
   --bg-card: #0c0c14;
-  --border: 0.1rem solid rgba(255, 255, 255, 3, 3);
+  --border: 0.1rem solid rgba(255, 255, 255, 3.3);
 }
 
 /* Seleciona todos os elementos da página */
@@ -61,6 +61,53 @@ section {
 .heading span {
   color: var(--main-color);
   text-transform: uppercase;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+.btn:hover {
+  letter-spacing: 0.2rem;
+}
+
+/*HEADER */
+
+.header {
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 7%;
+  border-bottom: var(--border);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header .logo img {
+  height: 6.5rem;
+  border-radius: 100%;
+}
+
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.header .navbar a:hover {
+  color: var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
 }
 
 /* === Botões flutuantes de rolagem === */
